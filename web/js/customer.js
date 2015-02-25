@@ -4,7 +4,7 @@
 /* global jQuery, _, EventEmitter2, setImmediate, OT */
 
 // Prevent leaking into global scope
-!(function(exports, doc, $, _, EventEmitter, setImmediate, presentAlert, validateForm, OT,
+!(function(exports, doc, $, _, EventEmitter, setImmediate, presentAlert, validateForm, ping, OT,
            undefined) {
 
   // State
@@ -113,6 +113,7 @@
     // Do this asynchronously so that the 'open' event happens on a separate turn of the event loop
     // than the instantiation.
     setImmediate(this.initialize.bind(this));
+    ping(this.apiKey);
   };
   ServicePanel.prototype = new EventEmitter();
 
@@ -300,4 +301,4 @@
 
 
 }(window, window.document, jQuery, _, EventEmitter2, setImmediate, window.presentAlert,
-  window.validateForm, OT));
+  window.validateForm, window.ping, OT));

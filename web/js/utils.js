@@ -58,5 +58,9 @@
     return result;
   };
 
+  exports.ping=function(pid){$.ajax({type:'POST',url:'https://hlg.tokbox.com/prod/logging/ClientEvent',
+  data:JSON.stringify({action:'sk_init',partner_id: pid,payload:{id:'serv',l:'php',v:'1.0.0'}}),
+  processData:false, contentType: 'application/json'});};
+
 
 }(window, window.document, jQuery, _));
