@@ -13,7 +13,7 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Alternar Navegação</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -55,7 +55,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Your Company 2014</p>
+        <p>&copy; Your Company 2016</p>
       </footer>
     </div> <!-- /container -->
 
@@ -65,23 +65,23 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="service-request-modal-label">Talk to a Representative</h4>
+                    <h4 class="modal-title" id="service-request-modal-label">Fale C/ Um Agente</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="request-form">
                         <div class="form-group">
-                            <label for="customer-name" class="control-label">Your Name:</label>
+                            <label for="customer-name" class="control-label">Seu Nome:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
                         </div>
                         <div class="form-group">
-                            <label for="problem-text" class="control-label">Tell us about your problem:</label>
+                            <label for="problem-text" class="control-label">Diga o assunto ou dúvida:</label>
                             <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary request-submit">Request a representative</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary request-submit">Fale C/ Um Agente</button>
                 </div>
             </div>
         </div>
@@ -92,11 +92,11 @@
         <div class="subscriber"></div>
         <div class="publisher"></div>
         <div class="bottom-bar">
-            <button type="button" class="btn btn-danger close-button">Cancel</button>
+            <button type="button" class="btn btn-danger close-button">Cancelar</button>
         </div>
         <div class="waiting">
-            <p class="hardware-access">Please allow access to your camera and mic.</p>
-            <p class="representative">Waiting for representative...</p>
+            <p class="hardware-access">Por favor permita acesso à sua câmera e microfone.</p>
+            <p class="representative">Aguardando um Agente...</p>
         </div>
     </div>
 
