@@ -18,7 +18,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">OpenTok Service Kit</a>
+          <a class="navbar-brand" href="#">LigaLiga Video Chat</a>
         </div>
       </div>
     </nav>
@@ -26,9 +26,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Your Amazing Product</h1>
-        <p>Here is a product that your customers need. Naturally, they may have a couple questions. Fortunately, you can use <a href="https://tokbox.com/opentok">OpenTok</a> to connect them to a representative who can answer those questions, troubleshoot, or help them making a buying decision.</p>
-        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Talk to a Representative</button></p>
+        <h1>Inicie Video Chat ou Ligue Grátis</h1>
+        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Fale c/ um agente</button></p>
       </div>
     </div>
 
@@ -55,7 +54,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Your Company 2016</p>
+        <p>&copy; LigaLiga.com 2016</p>
       </footer>
     </div> <!-- /container -->
 
@@ -64,13 +63,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="service-request-modal-label">Fale C/ Um Agente</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                    <h4 class="modal-title" id="service-request-modal-label">Fale c/ um agente</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="request-form">
                         <div class="form-group">
-                            <label for="customer-name" class="control-label">Seu Nome:</label>
+                            <label for="customer-name" class="control-label">Seu nome:</label>
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
                         </div>
                         <div class="form-group">
@@ -81,7 +80,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary request-submit">Fale C/ Um Agente</button>
+                    <button type="button" class="btn btn-primary request-submit">Fale c/ um agente</button>
                 </div>
             </div>
         </div>
@@ -96,7 +95,7 @@
         </div>
         <div class="waiting">
             <p class="hardware-access">Por favor permita acesso à sua câmera e microfone.</p>
-            <p class="representative">Aguardando um Agente...</p>
+            <p class="representative">Aguardando um agente...</p>
         </div>
     </div>
 
