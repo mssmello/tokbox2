@@ -28,8 +28,8 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-primary get-customer">Get Customer</button>
-                        <button type="button" class="btn btn-danger end-call">End Call</button>
+                        <button type="button" class="btn btn-primary get-customer">Próximo Cliente</button>
+                        <button type="button" class="btn btn-danger end-call">Encerrar Chamada</button>
                     </div>
                 </div>
             </div>
@@ -49,9 +49,9 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <dl class="dl-horizontal customer-info">
-                            <dt>Customer Name</dt>
+                            <dt>Nome do Cliente</dt>
                             <dd class="customer-name"></dd>
-                            <dt>Problem Description</dt>
+                            <dt>Descrição da dúvida</dt>
                             <dd class="problem-text"></dd>
                         </dl>
                     </div>
@@ -65,18 +65,18 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="service-provider-login-modal-label">Representative Login</h4>
+                    <h4 class="modal-title" id="service-provider-login-modal-label">Login do Agente</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="login-form">
                         <div class="form-group">
-                            <label for="representative-name" class="control-label">Your Name:</label>
+                            <label for="representative-name" class="control-label">Seu Nome:</label>
                             <input type="text" class="form-control representative-name" name="representative_name" required="required">
                         </div>
                     </form>
-                    <div class="alert alert-warning access-info" role="alert">Please <strong>allow access to your camera and mic</strong> before logging in.</div>
-                    <div class="alert alert-success access-success" role="alert">Your camera and mic are accessible.</div>
-                    <div class="alert alert-danger access-error" role="alert">Your camera and mic were denied. Please revert the choice and retry.</div>
+                    <div class="alert alert-warning access-info" role="alert">Por favor <strong>permita acesso ao seu microfone e câmera</strong> antes de seu login.</div>
+                    <div class="alert alert-success access-success" role="alert">Sua câmera e microfone estão liberados.</div>
+                    <div class="alert alert-danger access-error" role="alert">Sua câmera e microfone foram negados. Por favor permita e tente novamente.</div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary login-submit" disabled>Login</button>
