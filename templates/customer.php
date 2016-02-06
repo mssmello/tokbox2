@@ -32,11 +32,6 @@
       </div>
     </div>
 
-      <hr>
-
-      <footer>
-        <p>&copy; LigaLiga.com 2016</p>
-      </footer>
     </div> <!-- /container -->
 
     <!-- Service Request Modal -->
