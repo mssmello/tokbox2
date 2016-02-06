@@ -28,6 +28,7 @@
       <div class="container">
         <h1>Inicie Video Chat ou Ligue Grátis</h1>
         <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Chamada de Vídeo</button></p>
+        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Chamada de Voz</button></p>
       </div>
     </div>
 
