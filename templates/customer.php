@@ -31,26 +31,6 @@
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Feature</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Feature</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Feature</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-
       <hr>
 
       <footer>
@@ -64,7 +44,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
-                    <h4 class="modal-title" id="service-request-modal-label">Fale c/ um agente</h4>
+                    <h4 class="modal-title" id="service-request-modal-label">Chamada de Vídeo</h4>
                 </div>
                 <div class="modal-body">
                     <form role="form" class="request-form">
@@ -73,14 +53,14 @@
                             <input type="text" class="form-control customer-name" name="customer_name" required="required">
                         </div>
                         <div class="form-group">
-                            <label for="problem-text" class="control-label">Diga o assunto ou dúvida:</label>
+                            <label for="problem-text" class="control-label">Diga o assunto ou sua dúvida:</label>
                             <textarea class="form-control problem-text" name="problem_text" required="required"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary request-submit">Fale c/ um agente</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Desligar</button>
+                    <button type="button" class="btn btn-primary request-submit">Chamada de Vídeo</button>
                 </div>
             </div>
         </div>
@@ -91,7 +71,7 @@
         <div class="subscriber"></div>
         <div class="publisher"></div>
         <div class="bottom-bar">
-            <button type="button" class="btn btn-danger close-button">Cancelar</button>
+            <button type="button" class="btn btn-danger close-button">Desligar</button>
         </div>
         <div class="waiting">
             <p class="hardware-access">Por favor permita acesso à sua câmera e microfone.</p>
