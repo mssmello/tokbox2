@@ -76,13 +76,13 @@ $app->post('/help/session', function () use ($app, $opentok, $redis, $config) {
     // Validation
     $errorMessage;
     if (empty($customerName) || empty($problemText)) {
-        $errorMessage = 'The fields customer_name and problem_text are required.';
+        $errorMessage = 'Os campos customer_name e problem_text são requeridos.';
     }
     if (strlen($customerName) > 50) {
-        $errorMessage = 'The field customer_name is too long';
+        $errorMessage = 'Campo customer_name é muito longo';
     }
     if (strlen($problemText) > 200) {
-        $errorMessage = 'The field problem_text is too long';
+        $errorMessage = 'Campo problem_text é muito longo';
     }
     if (!empty($errorMessage)) {
         $app->response->setStatus(400);
