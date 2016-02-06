@@ -28,7 +28,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-primary get-customer">Próximo Cliente</button>
+                        <button type="button" class="btn btn-primary get-customer">Disponível p/ Próximo Cliente</button>
                         <button type="button" class="btn btn-danger end-call">Encerrar Chamada</button>
                     </div>
                 </div>
@@ -49,9 +49,9 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <dl class="dl-horizontal customer-info">
-                            <dt>Nome do Cliente</dt>
+                            <dt>Nome do cliente:</dt>
                             <dd class="customer-name"></dd>
-                            <dt>Descrição da dúvida</dt>
+                            <dt>Descrição do assunto ou dúvida do cliente:</dt>
                             <dd class="problem-text"></dd>
                         </dl>
                     </div>
