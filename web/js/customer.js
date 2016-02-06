@@ -189,7 +189,7 @@
   };
 
   ServicePanel.prototype._publisherDenied = function() {
-    presentAlert('Camera access denied. Please reset the setting in your browser and try again.',
+    presentAlert('Camera acesso negado. Please reset the setting in your browser and try again.',
                  'danger');
     this.close();
   };
@@ -234,7 +234,7 @@
                                                function(err) {
         // Handle subscriber error
         if (err && err.code === 1600) {
-          console.log('An internal error occurred. Try subscribing to this stream again.');
+          console.log('Ocorreu um erro interno. Try subscribing to this stream again.');
         }
       });
       this.$closeButton.text('End');
