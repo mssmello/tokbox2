@@ -27,7 +27,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Inicie Video Chat ou Ligue Grátis</h1>
-        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Fale c/ um agente</button></p>
+        <p><button class="btn btn-primary btn-lg service-request-btn" data-toggle="modal" data-target="#service-request-modal">Chamada de Vídeo</button></p>
       </div>
     </div>
 
@@ -75,7 +75,7 @@
         </div>
         <div class="waiting">
             <p class="hardware-access">Por favor permita acesso à sua câmera e microfone.</p>
-            <p class="representative">Aguardando um agente...</p>
+            <p class="representative">Aguarde por um agente...</p>
         </div>
     </div>
 
