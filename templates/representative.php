@@ -49,7 +49,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <dl class="dl-horizontal customer-info">
-                            <dt>Nome do cliente:</dt>
+                            <dt>Nome:</dt>
                             <dd class="customer-name"></dd>
                             <dt>Dúvida do cliente:</dt>
                             <dd class="problem-text"></dd>
