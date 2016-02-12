@@ -17,7 +17,7 @@
       $('<div class="alert alert-'+_.escape(type)+' fade in' +
         ( needsContainer ? ' container' : '') + '" role="alert">' +
           '<button type="button" class="close" data-dismiss="alert">' +
-            '<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>' +
+            '<span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span>' +
           '</button>' +
           _.escape(message) +
         '</div>');
@@ -39,7 +39,7 @@
         if (value.length > requirements.maxLength) {
           $formGroup.addClass('has-error');
           $formGroup.append(
-            '<span class="help-block validation-error">The maximum length is ' +
+            '<span class="help-block validation-error">O tamanho máximo é ' +
             requirements.maxLength + '</span>'
           );
           result = false;
@@ -49,7 +49,7 @@
         if (!value) {
           $formGroup.addClass('has-error');
           $formGroup.append(
-            '<span class="help-block validation-error">This field is required</span>'
+            '<span class="help-block validation-error">Este campo é obrigatório</span>'
           );
           result = false;
         }
