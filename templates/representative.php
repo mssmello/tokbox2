@@ -28,7 +28,7 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <button type="button" class="btn btn-primary get-customer">Disponível p/ Próximo Cliente</button>
+                        <button type="button" class="btn btn-primary get-customer">Ficar Disponível p/ Próximo Cliente</button>
                         <button type="button" class="btn btn-danger end-call">Encerrar Chamada</button>
                     </div>
                 </div>
