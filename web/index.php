@@ -53,7 +53,7 @@ $app->get('/', function () use ($app) {
 });
 
 // Representative landing page
-$app->get('/rep', function () use ($app) {
+$app->get('/agente', function () use ($app) {
     $app->render('representative.php');
 });
 
