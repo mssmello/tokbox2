@@ -104,7 +104,7 @@ $app->post('/help/session', function () use ($app, $opentok, $redis, $config) {
         'sessionId', $session->getSessionId()
     );
     // Handle errors
-    if (!handleRedisError($redisResponse, $app, 'Could not create the help session.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível criar a sessão de vídeo chat.')) {
         return;
     }
 
@@ -127,19 +127,19 @@ $app->post('/help/queue', function () use ($app, $redis) {
     // Validation
     // Check to see that the help session exists
     $redisResponse = $redis->exists($helpSessionKey);
-    if (!handleRedisError($redisResponse, $app, 'Could not check for the existence of the help session.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível verificar se a sessão de vídeo chat já existe.')) {
         return;
     }
     $exists = (bool)$redisResponse;
     if (!$exists) {
         $app->response->setStatus(400);
-        $app->response->setBody('An invalid session_id was given.');
+        $app->response->setBody('Uma session_id inválida foi criada.');
         return;
     }
 
     // Add the help session to the queue
     $redisResponse = $redis->rpush(HELP_QUEUE_KEY, $helpSessionKey);
-    if (!handleRedisError($redisResponse, $app, 'Could not add help session to the help queue.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível adicionar a sessão à fila de atendimento.')) {
         return;
     }
     $queueId = $helpSessionKey;
@@ -173,7 +173,7 @@ $app->delete('/help/queue', function () use ($app, $redis, $opentok, $config) {
 
     // Dequeue the next help session
     $redisResponse = $redis->lpop(HELP_QUEUE_KEY);
-    if (!handleRedisError($redisResponse, $app, 'Could not dequeue a help session from the help queue.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível atender a uma sessão de vídeo chat da fila.')) {
         return;
     }
     $helpSessionKey = $redisResponse;
@@ -186,7 +186,7 @@ $app->delete('/help/queue', function () use ($app, $redis, $opentok, $config) {
     } else {
 
         $redisResponse = $redis->hgetall($helpSessionKey);
-        if (!handleRedisError($redisResponse, $app, 'Could not read the help session.')) {
+        if (!handleRedisError($redisResponse, $app, 'Não foi possível ler a sessão de vídeo chat.')) {
             return;
         }
         $helpSessionData = $redisResponse;
@@ -204,7 +204,7 @@ $app->delete('/help/queue', function () use ($app, $redis, $opentok, $config) {
         // instead. If we had authentication for the representative, then we could also mark the 
         // help session with the identity of the representative.
         $redisResponse = $redis->del($helpSessionKey);
-        if (!handleRedisError($redisResponse, $app, 'Could not delete the help session after dequeuing.')) {
+        if (!handleRedisError($redisResponse, $app, 'Não foi possível remover a sessão após a retirada da fila.')) {
             return;
         }
 
@@ -219,13 +219,13 @@ $app->delete('/help/queue', function () use ($app, $redis, $opentok, $config) {
 // Dequeue the specific help session from the help queue.
 $app->delete('/help/queue/:queueId', function ($queueId) use ($app, $redis) {
     $redisResponse = $redis->lrem(HELP_QUEUE_KEY, 0, $queueId);
-    if (!handleRedisError($redisResponse, $app, 'Could not remove the help session from the queue.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível remover a sessão da fila de atendimento.')) {
         return;
     }
 
     $helpSessionKey = $queueId;
     $redisResponse = $redis->del($helpSessionKey);
-    if (!handleRedisError($redisResponse, $app, 'Could not delete the help session after removing from the queue.')) {
+    if (!handleRedisError($redisResponse, $app, 'Não foi possível remover a sessão após a retirada da fila.')) {
         return;
     }
 
